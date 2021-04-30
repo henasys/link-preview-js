@@ -358,6 +358,7 @@ export async function getLinkPreview(
   }
 
   const fetchOptions = {
+    method: 'HEAD',
     headers: options?.headers ?? {},
     redirect: `follow` as `follow`,
   };
